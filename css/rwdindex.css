@@ -1,0 +1,231 @@
+@media screen and (max-width:1250px) {
+    #header .nav .depth1 > li > a {     
+        color: #555555;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        display:block;
+    }
+
+}
+
+
+@media screen and (max-width:992px) {
+
+    
+    #header h1 img { width: 202px; }
+    #header .top_menu { float:none; text-align:right;}
+    #header .row { position: relative ;}
+    #header .open {  position:absolute; top:50%; right:30px; 
+        transform:translateY(-50%);
+        font-size:40px;  }
+    #header .close { position:fixed; top:0%; right:2%; z-index:999999; font-size:50px;}
+    #header .open.on { display:block; }
+    #header .close.on { display:block; }
+
+
+
+    #header .nav { z-index:99999;
+        position:fixed; top:-5%; bottom:0; transform:translateY(0%);
+        right:-250px; font-size:18px; color:#1e1e1e; 
+        width:250px; opacity:0;
+        padding-top: 100px; background:#fff; }
+    /* #header .nav.on { right:0; background:#fff; opacity:1; } */
+    
+
+    #header .nav .depth1 > li { float:none; position:relative; text-align:left; }
+    #header .nav .depth1 > li i { float:right}
+    #header .nav .depth1 > li > a { 
+        display:block; padding:15px 20px;
+        font-size:17px; text-align:left;
+        font-weight:bold
+    }
+    #header .nav .depth1 > li { border-bottom:1px solid #dddbdb; }
+    #header .nav .depth1 > li:nth-child(1) > a { border-top:1px solid #dddbdb;}
+    #header .nav .depth2 { 
+        position:static; 
+        top:100%; 
+        width:140%;
+        left:50%; 
+        transform:translate(0%);
+        text-align:left; background:#fff; font-size:12px;
+        height:0; overflow:hidden; 
+        transition:all 0.5s; 
+    }
+    
+    #header .nav .depth2 li a { padding-left:30px; background:lightblue; }
+
+    #header .nav .depth2 li { border-bottom:1px solid #797777; }
+    #header .nav .depth2::before { display:none; }
+ 
+}
+
+
+@media screen and (max-width:991px) {
+
+    .article1 .slide-group .slide_text h2 { 
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    .article1 .slide-group .slide_text p { 
+        font-size: 14px;
+        margin-top: 3%;
+        line-height: 20px;
+    }
+    .article1 .scroll-down {
+        position:absolute;
+        bottom:-25px; left:46%; right:0; transform:translateY(-50%);
+        background:none; border:none; cursor: pointer;}
+}
+
+
+
+
+
+@media screen and (max-width:580px) {
+    .article1 .scroll-down {
+        position:absolute;
+        bottom:-25px; left:43%; right:0; transform:translateY(-50%);
+        background:none; border:none; cursor: pointer;}
+
+    #section .article2 h2 { 
+        width: 100%;
+        text-align: center;
+        color: #333333;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -1px; }
+        
+    
+    .article2 > p, .article3 > .row > p, .article4 > p  { 
+        width: 100%;
+        text-align: center;
+        color: #777777;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-top: 10px;
+        letter-spacing: -1px;
+    }
+    .article2 li { float:left; width:100%; color:#fff; 
+        text-align:center; }
+    
+    .article2 li:nth-child(1) { animation:fadeInUp 0.7s both 0.1s; }
+    .article2 li:nth-child(2) { animation:fadeInUp 0.8s both 0.2s; }
+    .article2 li:nth-child(3) { animation:fadeInUp 0.9s both 0.3s; }
+
+    .article2 li > div > h3 { 
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.5px;
+    }
+    .article2 li > div > p {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 18px;
+        letter-spacing: -0.7px;
+    }
+    .article2 li > div > a {  
+        color: #fff;
+        font-size: 13px;
+        padding: 9px 30px 9px 30px;
+        border: 1px solid #fff;
+        position: relative;
+        z-index: 33;
+    }
+
+
+
+
+    #section .article3 h2 { 
+        width: 100%;
+        text-align: center;
+        color: #333333;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 50px; }
+    .article3 .slide_text > h3 {     
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 50px;
+        padding-top: 10%;
+        letter-spacing: -1px;
+        text-shadow: 1px 1px 1px #444;
+    }
+    .article3 .slide_text > p { 
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-top: 19px;
+        padding-bottom: 5%;
+        letter-spacing: -1px;
+        text-shadow: 1px 1px 1px #444; 
+    }
+    .article3 .slide_text .click { text-align:center;}
+    .article3 .slide_text .click1, .click2 {
+        display: inline-block;
+        width: 92.4px;
+        height: 92.4px;
+        border-radius: 92.4px;
+        opacity: 0.9;
+        z-index: 33;
+    }
+    .article3 .slide_text .click p { 
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #444;}
+
+
+
+    #section .article4 h2 { 
+        width: 100%;
+        text-align: center;
+        color: #333333;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -1px; }
+
+
+
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

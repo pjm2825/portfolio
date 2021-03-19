@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* article1 구역 */
+.article1 { position:relative }
+.article1 .slide-group { position:relative }
+.article1 .slide-group .slick-arrow {
+    position:absolute; top:50%; transform:translateY(-50%);
+    background:none; border:none; 
+    color:transparent; font-size:100px; cursor: pointer;
+}
+.article1 .slide-group:hover .slick-arrow { color:#fff; transition:all 1.5s;}
+.article1 .slide-group .prev { left:50px; z-index:9999; }
+.article1 .slide-group .next { right:50px; }
+.article1 .slide-group .slick-dots {
+    position:absolute; bottom:50px;  text-align:center;
+    left:0; right:0; 
+}
+.article1 .slide-group .slick-dots li {
+    display:inline-block; margin:0 5px; padding-bottom:70px
+}
+.article1 .slide-group .slick-dots li button {
+    width:10px; height:10px; background:#e3e3e3;
+    border:none; color:transparent; vertical-align:middle;
+    border-radius:50%;
+}
+.article1 .slide-group .slick-dots li.slick-active button {
+    /* border:2px solid #fff; */ background:#fff
+}
+
+.article1 .slide1 { height:750px;
+    background:url(../img/main01.jpg) no-repeat center;
+    background-size:cover; position:relative; }
+.article1 .slide2 { height:750px;
+    background:url(../img/main02.jpg) no-repeat center;
+    background-size:cover;  position:relative; }
+.article1 .slide3 { height:750px;
+    background:url(../img/main03.jpg) no-repeat center;
+    background-size:cover;  position:relative; }
+.article1 .slide4 { height:750px;
+    background:url(../img/main04.jpg) no-repeat center;
+    background-size:cover;  position:relative; }
+
+.article1 .slide-group .slide_text {  
+    position:absolute;
+    top:50%; left:0%; right:0%;
+    transform:translateY(-50%);
+    text-align:center;
+    color:#fff; 
+}
+.article1 .slide-group .slide.slick-cloned .slide_text {  
+    opacity:0
+}
+.article1 .slide-group .slide.slick-cloned .slide_text {  
+    opacity:0;
+}
+.article1 .slide-group .slide_text h2 { 
+    text-shadow:0px 0px 4px #555;
+    margin-bottom:30px;
+    font-size:50px; font-weight:bold; color:#fff
+}
+.article1 .slide-group .slide.slick-active .slide_text h2 { 
+    animation:fadeInUp 0.5s both 0.7s;
+}
+.article1 .slide-group .slide_text p { 
+    font-size:15px; line-height:1.5;
+    text-shadow:0px 0px 4px #555;
+}
+.article1 .slide-group .slide.slick-active .slide_text p { 
+    animation:fadeInUp 1s both 1.2s;
+}
+.article1 .scroll-down {
+    position:absolute;
+    bottom:-25px; left:48%; right:0; transform:translateY(-50%);
+    background:none; border:none; cursor: pointer;
+}
+
+/* article2 구역 */
+#section .article2 { padding-top:60px; }
+#section .article2 h2 { color: #000; font-size: 40px; line-height:42px;
+    /* padding:50px 0 10px; */ text-align:center; }
+#section .article3 h2 { color: #000; font-size: 40px; line-height:42px;
+    padding:50px 0 10px; text-align:center; }
+#section .article4 h2 { color: #000; font-size: 40px; line-height:42px;
+    padding:50px 0 10px; text-align:center; }
+.article2 > h2 { animation:fadeInUp 1s both 1.2s; }
+.article2 > p { animation:fadeInUp 1s both 1.2s; }
+#section h2 strong { font-weight:bold; }
+.article2 > p, .article3 > .row > p, .article4 > p  { 
+    padding-bottom: 40px; text-align:center; 
+    line-height:1.5; 
+    word-break:keep-all;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size:13px; padding:13px
+}
+.article2 li { height:400px; float:left; width:32.3333%; color:#fff;
+    position:relative; margin-top:30px; }
+
+.article2 li:nth-child(1) { background:url(../img/banner01.jpg) no-repeat center;
+    background-size:cover;  }
+.article2.on li:nth-child(1) { animation:fadeInUp 0.7s both 0.1s; }
+.article2 li:nth-child(2) { background:url(../img/banner02.jpg) no-repeat center;
+    background-size:cover; }
+.article2.on li:nth-child(2) { animation:fadeInUp 0.8S both 0.2s; }
+.article2 li:nth-child(3) { background:url(../img/banner03.jpg) no-repeat center;
+    background-size:cover; }
+.article2.on li:nth-child(3) { animation:fadeInUp 0.9S both 0.3s; }
+
+.article2 li > div > h3 { font-size: 28px; line-height: 32px; font-weight:bold; }
+.article2 li > div > p { padding: 20px 0; line-height:1.5; font-size:13px; font-weight:bold; }
+.article2 li > div > a {  display: inline-block; padding: 10px 40px; 
+    border: 2px solid #fff; font-size: 13px; font-weight:bold;
+}
+.article2 li > div { position:absolute; top:150px; bottom:150px; left:0%; right:0%; 
+    text-align:center; }
+
+.article2 .line { 
+    position:absolute;
+    top:10px; bottom:10px; left:10px; right:10px;
+}
+.article2 .line .topline { 
+    position:absolute; top:0%; left:0%; right:100%;
+    height:1px; background:#fff; z-index:9999999;
+    transition:all 0.5s ease-out;
+}
+.article2 .line .bottomline { 
+    position:absolute; bottom:0%; left:0%; right:100%;
+    height:1px; background:#fff; z-index:9999999;
+    transition:all 0.5s ease-out;
+} 
+.article2 .line .leftline { 
+    position:absolute; bottom:0%; left:0%; top:100%;
+    width:1px; background:#fff; z-index:9999999;
+    transition:all 0.5s ease-out;
+}
+.article2 .line .rightline { 
+    position:absolute; bottom:0%; right:0%; top:100%;
+    width:1px; background:#fff; z-index:9999999;
+    transition:all 0.5s ease-out;
+}
+.article2 li:hover .line .topline { right:0%; }
+.article2 li:hover .line .bottomline { right:0%; }
+.article2 li:hover .line .leftline { top:0%; }
+.article2 li:hover .line .rightline { top:0%; }
+
+
+/* article3 구역 */
+#section .article3 .slide { height:700px;
+    background:url(../img/banner04.jpg) no-repeat center;
+    background-size:cover; 
+    background-attachment: fixed;
+    margin-top:40px; 
+    position:relative;
+}
+.article3 .slide_text { position: relative; top:25%; }
+.article3 .slide_text > h3 { color: #000; font-size: 42px; line-height:42px;
+    padding-bottom:25px;
+}
+.article3 .slide_text > p { font-size:15px; line-height:25px; padding-bottom:70px; }
+.article3 .slide_text .click1, .click2 { display:inline-block; }
+.article3 .slide_text .click1 > p { text-align:center; margin-top:10px; }
+.article3 .slide_text .click2 > p { text-align:center; margin-top:10px; }
+.article3 > h2 { animation:fadeInUp 1s both 1.2s; }
+.article3 > p { animation:fadeInUp 1s both 1.2s; }
+#section .article3 h3 strong { font-weight:bold;}
+
+
+/* article4 구역 */
+.article4 > h2 { animation:fadeInUp 1s both 1.2s; }
+.article4 > p { animation:fadeInUp 1s both 1.2s; }
+.article4 .map { height:300px; margin-top:50px; animation:fadeInUp 1.2s both 1.5s; }
+
+
+
+/* 로딩인트로2 */
+.introBox {
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: #fff; z-index:99999999; 
+}
+.introBox img {
+    font-size:80px;
+    position:absolute;
+    top:50%; transform:translate(-50%, -50%);
+    left:50%; 
+}

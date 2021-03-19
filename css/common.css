@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* body{color:#666; font-size:15px } */
+.row{max-width: 1200px; margin:0 auto; padding:0 10px }
+
+#header.on .top_menu { display:none }
+#header.on {
+    position:fixed; width:100%;
+    background:#fff; top:0; left:0;
+    z-index:999999;
+}    
+#header .top_menu { background:#f3f3f3; color:#fff; font-size:12px; text-align:right; }
+#header .top_menu a { padding:10px 15px; display:inline-block; border-right:1px solid #e3e3e3;}
+#header .top_menu a:nth-of-type(1) { border-left:1px solid #e3e3e3; background:#397dda; }
+#header .top_menu a:nth-of-type(2),
+#header .top_menu a:nth-of-type(3) { border-left:1px solid #e3e3e3; background:#777; }
+
+
+#header .row { position:relative; }
+#header h1 { padding:10px 0; margin-left:50px }
+#header .open,
+#header .close { display:none }
+#header .nav { z-index:99999;
+    position:absolute; top:50%; transform:translateY(-50%);
+    right:0; font-size:18px; color:#1e1e1e; }
+#header .nav .depth1 > li { float:left; position:relative; }
+#header .nav .depth1 > li > a { 
+    display:block; padding:30px 45px;
+    font-size:17px; text-align:center;
+    font-weight:700;
+}
+#header .nav .depth1 > li > a > i {
+    
+}
+/* #header .nav .depth1 > li.on .depth2 { display:block; } */
+#header .depth2 { position:absolute; top:100%; width:140%;
+    left:50%; transform:translate(-50%);
+    text-align:center; background:#689de9; font-size:12px;
+    height:0; overflow:hidden; 
+    transition:all 0.3s;
+    z-index:9999;
+}
+#header .nav .depth1 > li:nth-child(1).on .depth2 {
+    height:150px; 
+}
+#header .nav .depth1 > li:nth-child(2).on .depth2 {
+    height:76px; 
+}
+#header .nav .depth1 > li:nth-child(3).on .depth2 {
+    height:38px; 
+}
+#header .nav .depth1 > li:nth-child(4).on .depth2 {
+    height:38px; 
+}
+#header .nav .depth1 > li:nth-child(5).on .depth2 {
+    height:114px; 
+}
+
+#header .nav .depth2 > li > a { 
+    display:block; padding:13px 0px; font-weight:bold; 
+}
+#header .nav .depth2 > li:hover > a { 
+    background:#fff; color:#689de9;
+}
+
+
+/* footer 구역 */
+#footer {background: #303030; padding: 25px 0 15px;
+    text-align: center; color: #fff; font-size: 12px;}
+#footer p:nth-child(1) a { font-weight: bold; display: inline-block;
+    font-size: 13px; color: #fff; padding: 0px 3px 0px 8px;
+}
+#footer p:nth-child(2) {margin-top: 17px; margin-bottom: 9px;
+    line-height: 1.6;}
+
+
+.gotop {
+    position: fixed;
+    bottom: 15%; right: 10%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    width: 42px; height: 42px;
+    text-align: center; line-height: 42px;
+    font-size: 12px;
+    opacity:0; transition:all 0.5s;
+}
+.gotop.on { opacity:1; }
+.gotop a { display:block; }
+.gotop a:hover {background: rgb(75, 186, 250);}
