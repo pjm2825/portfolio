@@ -84,10 +84,7 @@
 
 
 @media screen and (max-width:580px) {
-    .article1 .scroll-down {
-        position:absolute;
-        bottom:-25px; left:43%; right:0; transform:translateY(-50%);
-        background:none; border:none; cursor: pointer;}
+    
 
     #section .article2 h2 { 
         width: 100%;
